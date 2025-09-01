@@ -1,9 +1,19 @@
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter ,MessageCircle} from "lucide-react";
+import { useState } from "react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+
   const contactInfo = [
     {
       icon: Mail,
@@ -37,11 +47,40 @@ const Contact = () => {
       href:  "https://www.linkedin.com/in/tapiwa-ndemera-373704348/",
     },
     {
-          icon: MessageCircle,
-          href: "https://wa.me/263715039928",
-          label: "WhatsApp"
-        }
+      icon: MessageCircle,
+      label: "WhatsApp",
+      href: "https://wa.me/263715039928"
+    }
   ];
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("sending");
+
+    try {
+      const response = await fetch("https://formspree.io/f/xwpnqnkg", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    }
+  };
 
   return (
     <section className="py-20 bg-background relative overflow-hidden">
@@ -62,73 +101,92 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <div className="animate-slide-up">
-            <div className="bg-gradient-card p-8 rounded-2xl glass">
-              <h3 className="text-2xl font-bold text-foreground mb-6">
-                Send me a message
-              </h3>
-              
-              <form className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-muted-foreground mb-2">
-                      First Name
-                    </label>
-                    <Input 
-                      placeholder="John" 
-                      className="bg-surface-elevated border-border/50 focus:border-primary transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-muted-foreground mb-2">
-                      Last Name
-                    </label>
-                    <Input 
-                      placeholder="Doe" 
-                      className="bg-surface-elevated border-border/50 focus:border-primary transition-colors"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-muted-foreground mb-2">
-                    Email
-                  </label>
-                  <Input 
-                    type="email" 
-                    placeholder="john.doe@example.com" 
-                    className="bg-surface-elevated border-border/50 focus:border-primary transition-colors"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-muted-foreground mb-2">
-                    Subject
-                  </label>
-                  <Input 
-                    placeholder="Project Discussion" 
-                    className="bg-surface-elevated border-border/50 focus:border-primary transition-colors"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-muted-foreground mb-2">
-                    Message
-                  </label>
-                  <Textarea 
-                    placeholder="Tell me about your project..." 
-                    rows={5}
-                    className="bg-surface-elevated border-border/50 focus:border-primary transition-colors resize-none"
-                  />
-                </div>
-
-                <Button variant="hero" size="lg" className="w-full group">
-                  Send Message
-                  <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </form>
+          <form className="space-y-6" onSubmit={handleSubmit}>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-muted-foreground mb-2">
+                  First Name
+                </label>
+                <Input 
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  placeholder="John" 
+                  className="bg-surface-elevated border-border/50 focus:border-primary transition-colors"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-muted-foreground mb-2">
+                  Last Name
+                </label>
+                <Input 
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  placeholder="Doe" 
+                  className="bg-surface-elevated border-border/50 focus:border-primary transition-colors"
+                  required
+                />
+              </div>
             </div>
-          </div>
+
+            <div>
+              <label className="block text-sm font-medium text-muted-foreground mb-2">
+                Email
+              </label>
+              <Input 
+                type="email" 
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="john.doe@example.com" 
+                className="bg-surface-elevated border-border/50 focus:border-primary transition-colors"
+                required
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-muted-foreground mb-2">
+                Subject
+              </label>
+              <Input 
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                placeholder="Project Discussion" 
+                className="bg-surface-elevated border-border/50 focus:border-primary transition-colors"
+                required
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-muted-foreground mb-2">
+                Message
+              </label>
+              <Textarea 
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Tell me about your project..." 
+                rows={5}
+                className="bg-surface-elevated border-border/50 focus:border-primary transition-colors resize-none"
+                required
+              />
+            </div>
+
+            <Button variant="hero" size="lg" className="w-full group" type="submit">
+              {status === "sending" ? "Sending..." : "Send Message"}
+              <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+
+            {status === "success" && (
+              <p className="text-green-500 mt-2">Message sent successfully!</p>
+            )}
+            {status === "error" && (
+              <p className="text-red-500 mt-2">Something went wrong. Please try again.</p>
+            )}
+          </form>
 
           {/* Contact Information */}
           <div className="animate-slide-up space-y-8">

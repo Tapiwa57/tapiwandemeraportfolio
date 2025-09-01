@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter ,MessageCircle} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,19 +8,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "tapiwa.ndemera@email.com",
-      href: "mailto:tapiwa.ndemera@email.com"
+      value: "tapiwandemera45@gmail.com",
+      href: "mailto:tapiwandemera45@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+263 715 039 928",
+      href: "#"
     },
     {
       icon: MapPin,
-      label: "Location",
-      value: "New York, NY",
+      label: "Harare",
+      value: "Zimbabwe",
       href: "#"
     }
   ];
@@ -29,18 +29,18 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/tapiwa-ndemera"
+      href: "https://github.com/Tapiwa57",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/tapiwa-ndemera"
+      href:  "https://www.linkedin.com/in/tapiwa-ndemera-373704348/",
     },
     {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/tapiwa_ndemera"
-    }
+          icon: MessageCircle,
+          href: "https://wa.me/263715039928",
+          label: "WhatsApp"
+        }
   ];
 
   return (

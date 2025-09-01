@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Heart, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Twitter, ArrowUp, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -6,18 +6,18 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/tapiwa-ndemera",
+      href: "https://github.com/Tapiwa57",
       label: "GitHub"
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/tapiwa-ndemera",
+      href: "https://www.linkedin.com/in/tapiwa-ndemera-373704348/",
       label: "LinkedIn"
     },
     {
-      icon: Twitter,
-      href: "https://twitter.com/tapiwa_ndemera",
-      label: "Twitter"
+      icon: MessageCircle,
+      href: "https://wa.me/263715039928",
+      label: "WhatsApp"
     }
   ];
 
@@ -35,7 +35,7 @@ const Footer = () => {
               Tapiwa Ndemera
             </a>
             <p className="text-muted-foreground">
-              UI/UX Designer & Frontend Developer
+              UI/UX Designer & Web Developer
             </p>
           </div>
 
@@ -74,7 +74,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="flex flex-col items-center space-y-4 text-center pt-8 border-t border-border/50 w-full">
             <p className="text-muted-foreground text-sm flex items-center gap-1">
-              Made with <Heart className="w-4 h-4 text-red-500" /> by Tapiwa Ndemera
+              Made with  by Tapiwa Ndemera
             </p>
             <p className="text-muted-foreground text-sm">
               © {currentYear} Tapiwa Ndemera. All rights reserved.

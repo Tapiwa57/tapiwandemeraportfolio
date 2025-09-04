@@ -96,9 +96,11 @@ const Services = () => {
               to work on new challenges and innovative projects.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://wa.me/263715039928">
               <button className="bg-gradient-primary text-white px-8 py-3 rounded-lg hover:shadow-glow transition-all duration-300 hover:scale-105 font-semibold">
                 Start a Project
               </button>
+              </a>
             </div>
           </div>
         </div>

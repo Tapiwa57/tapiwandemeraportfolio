@@ -93,7 +93,7 @@ const Projects = () => {
       category: "UI/UX Design",
     },
     {
-      title: "Real Estate Platform",
+      title: "Coming soon...",
       description:
         "Property listing platform with advanced search filters, virtual tours, and agent portal.",
       youtubeId: "YOUR_VIDEO_ID_6",

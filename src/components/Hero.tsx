@@ -1,6 +1,6 @@
 import { Github, Linkedin, Download, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profileImage from "@/assets/Ellipse 2.png";
+import profileImage from "/assets/Ellipse 2.png";
 
 const Hero = () => {
   return (
@@ -57,12 +57,18 @@ const Hero = () => {
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               </a>
-              <Button variant="outlineHero" size="xl" asChild>
-                <a href="/src/assets/Tapiwa_Ndemera_CV.pdf" download className="inline-flex items-center">
-                  <Download className="mr-2 w-5 h-5" />
-                  Download CV
-                </a>
-              </Button>
+ <Button variant="outlineHero" size="xl" asChild>
+  <a
+    href="/Tapiwa_Ndemera_CV.pdf"
+    download="Tapiwa_Ndemera_CV.pdf"
+    className="inline-flex items-center"
+  >
+    <Download className="mr-2 w-5 h-5" />
+    Download CV
+  </a>
+</Button>
+
+
             </div>
           </div>
 

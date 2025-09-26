@@ -9,7 +9,7 @@ const Projects = () => {
       description:
         "Provisional Practice Exam Application that allows learners to take interactive practice tests, track progress, and review results.",
       youtubeId: "Jr0_tsjnCDY?si=gr9aqMqdsw2XQh6N",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Chart.js" ,"Supabase"],
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Chart.js", "Supabase"],
       liveUrl: "https://vista-vid-provisional-practice-exam.vercel.app/",
       githubUrl: "https://github.com/Tapiwa57/vista-vid-provisional-practice-exam-app",
       featured: true,
@@ -26,7 +26,7 @@ const Projects = () => {
       featured: true,
       category: "Web Development",
     },
-{
+    {
       title: "Africa Market Place (Work In Progress)",
       description:
         "A modern e-commerce platform designed to connect local African vendors with buyers across the continent and beyond. The platform allows small and medium enterprises (SMEs) to showcase their products, manage inventory, and securely process payments, while giving customers a seamless shopping experience.",
@@ -37,10 +37,9 @@ const Projects = () => {
       featured: false,
       category: "Web Development",
     },
-{
+    {
       title: "Coming soon...",
-      description:
-        ".....",
+      description: ".....",
       youtubeId: "YOUR_VIDEO_ID_3",
       technologies: [""],
       liveUrl: "#",
@@ -50,19 +49,7 @@ const Projects = () => {
     },
     {
       title: "Coming soon...",
-      description:
-        ".....",
-      youtubeId: "YOUR_VIDEO_ID_3",
-      technologies: [""],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false,
-      category: "Web Development",
-    },
-        {
-      title: "Coming soon...",
-      description:
-        ".....",
+      description: ".....",
       youtubeId: "YOUR_VIDEO_ID_3",
       technologies: [""],
       liveUrl: "#",
@@ -71,13 +58,25 @@ const Projects = () => {
       category: "Web Development",
     },
     {
-      title: "Micofinance  App",
+      title: "Coming soon...",
+      description: ".....",
+      youtubeId: "YOUR_VIDEO_ID_3",
+      technologies: [""],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+      category: "Web Development",
+    },
+    {
+      title: "Micofinance App",
       description:
-        "Secure mobile  application with authentication and transaction history.",
+        "Secure mobile application with authentication and transaction history.",
       youtubeId: "SxP6wsAz_lQ?si=hAv_QC4eQbAVoc18",
       technologies: ["Figma"],
-      liveUrl: "https://www.figma.com/proto/0vJxgiqBGEvgf1vqzJYYLc/Application-BIfinance?page-id=0%3A1&node-id=306-445&t=Ez3fSjgo15rysAgq-1",
-      figmaUrl: "https://www.figma.com/proto/0vJxgiqBGEvgf1vqzJYYLc/Application-BIfinance?page-id=0%3A1&node-id=306-445&t=Ez3fSjgo15rysAgq-1",
+      liveUrl:
+        "https://www.figma.com/proto/0vJxgiqBGEvgf1vqzJYYLc/Application-BIfinance?page-id=0%3A1&node-id=306-445&t=Ez3fSjgo15rysAgq-1",
+      figmaUrl:
+        "https://www.figma.com/proto/0vJxgiqBGEvgf1vqzJYYLc/Application-BIfinance?page-id=0%3A1&node-id=306-445&t=Ez3fSjgo15rysAgq-1",
       featured: false,
       category: "UI/UX Design",
     },
@@ -87,8 +86,10 @@ const Projects = () => {
         "A modern e-commerce platform designed to connect local African vendors with buyers across the continent and beyond. The platform allows small and medium enterprises (SMEs) to showcase their products, manage inventory, and securely process payments, while giving customers a seamless shopping experience.",
       youtubeId: "f2-FsFxDI-E?si=oZdLGgsA92RNA66q",
       technologies: ["Figma"],
-      liveUrl: "https://www.figma.com/proto/vdCmkM1SwNVXMeoB0osIeP/Market-place-website?page-id=0%3A1&node-id=126-847&scaling=scale-down-width&content-scaling=fixed&t=1XDqK22FCURdDD0h-1",
-      figmaUrl: "https://www.figma.com/proto/vdCmkM1SwNVXMeoB0osIeP/Market-place-website?page-id=0%3A1&node-id=126-847&scaling=scale-down-width&content-scaling=fixed&t=1XDqK22FCURdDD0h-1",
+      liveUrl:
+        "https://www.figma.com/proto/vdCmkM1SwNVXMeoB0osIeP/Market-place-website?page-id=0%3A1&node-id=126-847&scaling=scale-down-width&content-scaling=fixed&t=1XDqK22FCURdDD0h-1",
+      figmaUrl:
+        "https://www.figma.com/proto/vdCmkM1SwNVXMeoB0osIeP/Market-place-website?page-id=0%3A1&node-id=126-847&scaling=scale-down-width&content-scaling=fixed&t=1XDqK22FCURdDD0h-1",
       featured: false,
       category: "UI/UX Design",
     },
@@ -103,45 +104,62 @@ const Projects = () => {
       featured: false,
       category: "UI/UX Design",
     },
+    // Graphic Design Section
+    {
+      title: "Graphic Poster for Steel Structures Zimbabwe",
+      description:
+        "A creative poster design showcasing modern typography and brand identity. Click the link for full post",
+      imageUrl: "/assets/Instagram post - 1.png",
+      technologies: ["Figma"],
+      liveUrl: "https://www.figma.com/proto/0dt4JQYELMfDfUBtrN2Yqs/Steel-structure-Zimbabwe?page-id=0%3A1&node-id=182-18&viewport=239%2C425%2C0.06&t=yfMEsfYTE4LTfBFM-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=22%3A2",
+      figmaUrl: "https://www.figma.com/proto/0dt4JQYELMfDfUBtrN2Yqs/Steel-structure-Zimbabwe?page-id=0%3A1&node-id=182-18&viewport=239%2C425%2C0.06&t=yfMEsfYTE4LTfBFM-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=22%3A2",
+      featured: false,
+      category: "Graphic Design",
+    },
+    {
+      title: "ARIPO @50 Logo Design ",
+      description:
+        "Minimalist logo design crafted to represent a bold and professional brand.",
+      imageUrl: "/assets/Logo.png",
+      technologies: ["Figma"],
+      liveUrl: "https://www.figma.com/design/GMEnGzUeBH6LCdkvohKpAF/Aripo-50-logo-design?node-id=6-280&t=N40McinznsRAN4Tz-1",
+      figmaUrl: "https://www.figma.com/design/GMEnGzUeBH6LCdkvohKpAF/Aripo-50-logo-design?node-id=6-280&t=N40McinznsRAN4Tz-1",
+      featured: false,
+      category: "Graphic Design",
+    },
   ];
 
   const featuredProjects = projects.filter((p) => p.featured).slice(0, 2);
-  const webProjects = projects.filter(
-    (p) => p.category === "Web Development" && !p.featured
-  );
-  const designProjects = projects.filter(
-    (p) => p.category === "UI/UX Design" && !p.featured
-  );
+  const webProjects = projects.filter((p) => p.category === "Web Development" && !p.featured);
+  const designProjects = projects.filter((p) => p.category === "UI/UX Design" && !p.featured);
+  const graphicProjects = projects.filter((p) => p.category === "Graphic Design" && !p.featured);
 
   const [showMoreWeb, setShowMoreWeb] = useState(false);
   const [showMoreDesign, setShowMoreDesign] = useState(false);
+  const [showMoreGraphic, setShowMoreGraphic] = useState(false);
 
-  // Reusable card for grid sections
   const ProjectCard = ({ project }: { project: typeof projects[0] }) => (
     <div className="bg-gradient-card rounded-2xl overflow-hidden glass hover-lift group">
       <div className="aspect-video w-full rounded-2xl overflow-hidden">
-        <iframe
-          className="w-full h-full"
-          src={`https://www.youtube.com/embed/${project.youtubeId}`}
-          title={project.title}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        {project.youtubeId ? (
+          <iframe
+            className="w-full h-full"
+            src={`https://www.youtube.com/embed/${project.youtubeId}`}
+            title={project.title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        ) : project.imageUrl ? (
+          <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover" />
+        ) : null}
       </div>
       <div className="p-6">
-        <h4 className="text-xl font-bold text-foreground mb-2">
-          {project.title}
-        </h4>
-        <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
-          {project.description}
-        </p>
+        <h4 className="text-xl font-bold text-foreground mb-2">{project.title}</h4>
+        <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.slice(0, 3).map((tech, index) => (
-            <span
-              key={index}
-              className="px-2 py-1 bg-primary/10 text-primary rounded text-xs"
-            >
+            <span key={index} className="px-2 py-1 bg-primary/10 text-primary rounded text-xs">
               {tech}
             </span>
           ))}
@@ -158,17 +176,15 @@ const Projects = () => {
           >
             <ExternalLink className="w-4 h-4" />
           </a>
-          {/* GitHub OR Figma */}
-  {project.githubUrl ? (
-    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-      <Github className="w-5 h-5 hover:text-primary" />
-    </a>
-  ) : project.figmaUrl ? (
-    <a href={project.figmaUrl} target="_blank" rel="noopener noreferrer">
-      <Figma className="w-5 h-5 hover:text-primary" />
-    </a>
-  ) : null}
-          
+          {project.githubUrl ? (
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+              <Github className="w-5 h-5 hover:text-primary" />
+            </a>
+          ) : project.figmaUrl ? (
+            <a href={project.figmaUrl} target="_blank" rel="noopener noreferrer">
+              <Figma className="w-5 h-5 hover:text-primary" />
+            </a>
+          ) : null}
         </div>
       </div>
     </div>
@@ -291,6 +307,29 @@ const Projects = () => {
                 onClick={() => setShowMoreDesign(!showMoreDesign)}
               >
                 {showMoreDesign ? "Show Less" : "Show More"}
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </div>
+          )}
+        </div>
+
+        {/* Graphic Design Projects */}
+        <div>
+          <h3 className="text-3xl font-bold text-gradient mb-10 text-center">
+            Graphic Design Projects
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {(showMoreGraphic ? graphicProjects : graphicProjects.slice(0, 3)).map((p, i) => (
+              <ProjectCard key={i} project={p} />
+            ))}
+          </div>
+          {graphicProjects.length > 3 && (
+            <div className="text-center mt-8">
+              <Button
+                variant="hero"
+                onClick={() => setShowMoreGraphic(!showMoreGraphic)}
+              >
+                {showMoreGraphic ? "Show Less" : "Show More"}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </div>

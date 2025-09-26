@@ -34,7 +34,7 @@ const Projects = () => {
       technologies: ["Next.js", "Node.js"],
       liveUrl: "https://africa-market-place-e-com-vrvd.vercel.app/",
       githubUrl: "https://github.com/Tapiwa57/Africa-Market-Place-e-com",
-      featured: true,
+      featured: false,
       category: "Web Development",
     },
 {

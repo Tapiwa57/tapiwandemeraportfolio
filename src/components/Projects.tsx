@@ -30,7 +30,7 @@ const Projects = () => {
       title: "Africa Market Place",
       description:
         "A modern e-commerce platform designed to connect local African vendors with buyers across the continent and beyond. The platform allows small and medium enterprises (SMEs) to showcase their products, manage inventory, and securely process payments, while giving customers a seamless shopping experience.",
-      youtubeId: "YOUR_VIDEO_ID_3",
+      youtubeId: "f2-FsFxDI-E?si=oZdLGgsA92RNA66q",
       technologies: ["Next.js", "Node.js"],
       liveUrl: "https://africa-market-place-e-com-vrvd.vercel.app/",
       githubUrl: "https://github.com/Tapiwa57/Africa-Market-Place-e-com",

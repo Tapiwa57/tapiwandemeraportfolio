@@ -27,7 +27,7 @@ const Projects = () => {
       category: "Web Development",
     },
 {
-      title: "Africa Market Place",
+      title: "Africa Market Place (Work In Progress)",
       description:
         "A modern e-commerce platform designed to connect local African vendors with buyers across the continent and beyond. The platform allows small and medium enterprises (SMEs) to showcase their products, manage inventory, and securely process payments, while giving customers a seamless shopping experience.",
       youtubeId: "f2-FsFxDI-E?si=oZdLGgsA92RNA66q",
